@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae of Matheus Nascimento Loureiro - Master's Student in Economics">
+    <title>CV | Matheus Nascimento Loureiro</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .cv-embed-container {
+            background: var(--bg-primary);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cv-embed {
+            width: 100%;
+            height: 80vh;
+            min-height: 600px;
+            border: none;
+        }
+
+        .cv-fallback {
+            padding: var(--space-10);
+            text-align: center;
+            background: var(--bg-tertiary);
+        }
+
+        .cv-fallback p {
+            margin-bottom: var(--space-4);
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <span>MNL</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="research.html" class="nav-link" data-i18n="nav.research">Research</a></li>
+                <li><a href="cv.html" class="nav-link active" data-i18n="nav.cv">CV</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="pt">PT</button>
+                </div>
+            </div>
+
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CV Section -->
+    <section class="cv-section section" style="padding-top: calc(var(--nav-height) + var(--space-12));">
+        <div class="container">
+            <div class="cv-header">
+                <div>
+                    <h1 data-i18n="cv.pageTitle">Curriculum Vitae</h1>
+                    <p style="color: var(--text-secondary); margin-top: var(--space-2);" data-i18n="cv.pageSubtitle">My
+                        academic and professional journey</p>
+                </div>
+                <a href="assets/cv/cv.pdf" class="btn btn-primary" download data-cv-download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" style="margin-right: 8px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span data-i18n="cv.downloadCV">Download PDF</span>
+                </a>
+            </div>
+
+            <!-- PDF Embed -->
+            <div class="cv-embed-container">
+                <iframe id="cvEmbed" class="cv-embed" src="assets/cv/cv.pdf" title="Curriculum Vitae">
+                    <!-- Fallback for browsers that don't support PDF embed -->
+                </iframe>
+                <noscript>
+                    <div class="cv-fallback">
+                        <p>Unable to display PDF. Please download it directly.</p>
+                        <a href="assets/cv/cv.pdf" class="btn btn-primary" download>Download CV</a>
+                    </div>
+                </noscript>
+            </div>
+
+            <!-- Fallback message for when PDF fails to load -->
+            <div id="cvFallback" class="cv-fallback"
+                style="display: none; margin-top: var(--space-4); border-radius: var(--radius-xl);">
+                <p data-i18n-dynamic="cv.pdfNotFound">PDF not found. Please upload your CV to assets/cv/cv.pdf</p>
+                <a href="assets/cv/cv.pdf" class="btn btn-primary" download data-cv-download>Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 data-profile="name">Matheus Nascimento Loureiro</h3>
+                    <p data-i18n="footer.description">Master's student in Economics, passionate about research and data
+                        analysis.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="research.html" data-i18n="nav.research">Research</a></li>
+                        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+                        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-i18n="footer.connect">Connect</h4>
+                    <ul>
+                        <li><a href="#" data-social-text="linkedin" target="_blank">LinkedIn</a></li>
+                        <li><a href="#" data-social-text="twitter" target="_blank">Twitter/X</a></li>
+                        <li><a href="#" data-social-text="github" target="_blank">GitHub</a></li>
+                        <li><a href="#" data-social-text="scholar" target="_blank">Google Scholar</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2026 Matheus Nascimento Loureiro. All rights reserved.</p>
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="pt">PT</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Customizer -->
+    <div class="theme-toggle">
+        <button id="themeToggleBtn" class="btn btn-primary btn-icon" title="Customize Theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="themePanel" class="theme-panel">
+        <div class="theme-panel-header">
+            <span class="theme-panel-title" data-i18n="theme.title">Customize Theme</span>
+            <button id="themeReset" class="btn btn-ghost btn-sm">Reset</button>
+        </div>
+        <p style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-3);"
+            data-i18n="theme.presets">Color Presets</p>
+        <div id="themePresets" class="theme-presets"></div>
+        <div class="color-picker-wrapper" style="margin-top: var(--space-4);">
+            <label for="colorPicker" data-i18n="theme.custom">Custom Color</label>
+            <input type="color" id="colorPicker" class="color-picker" value="#4f7cff">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/config.js"></script>
+    <script>
+        // Check if PDF loaded successfully
+        document.getElementById('cvEmbed').addEventListener('error', function () {
+            document.getElementById('cvFallback').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

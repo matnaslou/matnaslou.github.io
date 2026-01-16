@@ -1,0 +1,68 @@
+{
+    "posts": [
+        {
+            "id": "welcome-post",
+            "slug": "welcome-to-my-blog",
+            "title": {
+                "en": "Welcome to My Blog",
+                "pt": "Bem-vindo ao Meu Blog"
+            },
+            "excerpt": {
+                "en": "This is my first blog post where I share my thoughts on economics, research, and academic life.",
+                "pt": "Este é meu primeiro post do blog onde compartilho meus pensamentos sobre economia, pesquisa e vida acadêmica."
+            },
+            "content": {
+                "en": "posts/welcome-en.html",
+                "pt": "posts/welcome-pt.html"
+            },
+            "image": "assets/blog/welcome.jpg",
+            "category": "general",
+            "tags": [
+                "welcome",
+                "introduction"
+            ],
+            "author": "Matheus Nascimento Loureiro",
+            "date": "2026-01-16",
+            "readingTime": 3,
+            "published": true
+        }
+    ],
+    "categories": {
+        "en": {
+            "general": "General",
+            "economics": "Economics",
+            "research": "Research Methodology",
+            "data-analysis": "Data Analysis",
+            "academic-life": "Academic Life"
+        },
+        "pt": {
+            "general": "Geral",
+            "economics": "Economia",
+            "research": "Metodologia de Pesquisa",
+            "data-analysis": "Análise de Dados",
+            "academic-life": "Vida Acadêmica"
+        }
+    },
+    "tags": {
+        "en": [
+            "welcome",
+            "introduction",
+            "economics",
+            "research",
+            "data",
+            "python",
+            "stata",
+            "tips"
+        ],
+        "pt": [
+            "boas-vindas",
+            "introdução",
+            "economia",
+            "pesquisa",
+            "dados",
+            "python",
+            "stata",
+            "dicas"
+        ]
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Research by Matheus Nascimento Loureiro - Publications, Working Papers, and Works in Progress">
+    <title>Research | Matheus Nascimento Loureiro</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <span>MNL</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="research.html" class="nav-link active" data-i18n="nav.research">Research</a></li>
+                <li><a href="cv.html" class="nav-link" data-i18n="nav.cv">CV</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="pt">PT</button>
+                </div>
+            </div>
+
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 data-i18n="research.pageTitle">Research</h1>
+            <p data-i18n="research.pageSubtitle">My academic work including publications, working papers, and works in
+                progress</p>
+        </div>
+    </header>
+
+    <!-- Research Content -->
+    <main class="section">
+        <div class="container">
+            <!-- Tabs -->
+            <div class="tabs" role="tablist">
+                <button class="tab active" role="tab" data-tab="publications"
+                    data-i18n="research.publications">Publications</button>
+                <button class="tab" role="tab" data-tab="working-papers" data-i18n="research.workingPapers">Working
+                    Papers</button>
+                <button class="tab" role="tab" data-tab="works-in-progress" data-i18n="research.worksInProgress">Works
+                    in Progress</button>
+            </div>
+
+            <!-- Publications Tab -->
+            <div id="publications" class="tab-content active">
+                <div id="publicationsList" class="research-list">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Working Papers Tab -->
+            <div id="working-papers" class="tab-content">
+                <div id="workingPapersList" class="research-list">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Works in Progress Tab -->
+            <div id="works-in-progress" class="tab-content">
+                <div id="worksInProgressList" class="research-list">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 data-profile="name">Matheus Nascimento Loureiro</h3>
+                    <p data-i18n="footer.description">Master's student in Economics, passionate about research and data
+                        analysis.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="research.html" data-i18n="nav.research">Research</a></li>
+                        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+                        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-i18n="footer.connect">Connect</h4>
+                    <ul>
+                        <li><a href="#" data-social-text="linkedin" target="_blank">LinkedIn</a></li>
+                        <li><a href="#" data-social-text="twitter" target="_blank">Twitter/X</a></li>
+                        <li><a href="#" data-social-text="github" target="_blank">GitHub</a></li>
+                        <li><a href="#" data-social-text="scholar" target="_blank">Google Scholar</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2026 Matheus Nascimento Loureiro. All rights reserved.</p>
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="pt">PT</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Customizer -->
+    <div class="theme-toggle">
+        <button id="themeToggleBtn" class="btn btn-primary btn-icon" title="Customize Theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="themePanel" class="theme-panel">
+        <div class="theme-panel-header">
+            <span class="theme-panel-title" data-i18n="theme.title">Customize Theme</span>
+            <button id="themeReset" class="btn btn-ghost btn-sm">Reset</button>
+        </div>
+        <p style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-3);"
+            data-i18n="theme.presets">Color Presets</p>
+        <div id="themePresets" class="theme-presets"></div>
+        <div class="color-picker-wrapper" style="margin-top: var(--space-4);">
+            <label for="colorPicker" data-i18n="theme.custom">Custom Color</label>
+            <input type="color" id="colorPicker" class="color-picker" value="#4f7cff">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/research.js"></script>
+</body>
+
+</html>
